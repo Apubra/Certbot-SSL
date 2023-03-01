@@ -5,6 +5,9 @@ sudo apt-get update
 sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d yourdomain.com -d www.yourdomain.com
 
+or you can see your all nginx domain and active ssl for specific:
+sudo certbot --nginx
+
 # Only valid for 90 days, test the renewal process with
 certbot renew --dry-run
 ```
